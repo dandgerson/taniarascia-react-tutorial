@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function tableBody(props) {
+export default function tableBody(props) { // get props by simple function component
   const rows = props.characterData.map((row, index) => {
     return (
       <tr key={index}>
