@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 import Table from './Table';
 import Form from './Form';
+
 export default class App extends Component {
+
   state = {
     characters: [],
   }
@@ -11,7 +13,7 @@ export default class App extends Component {
     const { characters } = this.state;
 
     this.setState({
-      characters: characters.filter((character, i) => {
+      characters: characters.filter((_, i) => {
         return i !== index;
       })
     })
