@@ -21,6 +21,7 @@ export default class From extends Component {
   }
 
   submitForm = () => {
+    if (!this.state.name || !this.state.job) return;
     this.props.handleSubmit(this.state);
     this.setState(this.initialState);
   }
